@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(247,240,213);
+}
+
+.nav-links{
+    display: flex;
+    position: relative;
+    top: 15px;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(243, 112, 133);
+    font-family: Nothing You Could Do;
+    font-size: 28px;
+    font-weight: bolder;
+}
+.nav-links li a:hover{
+    transition: all ease-in-out 250ms;
+    color: black;
+}
+#bana{
+    position: relative;
+    font-family: Nothing You Could Do;
+    font-size: 9em;
+    text-align: center;
+    top: 160px;
+    letter-spacing: 10px;
+    user-select: none;
+    background: linear-gradient(to right, #fd7982, #4b2428);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pictures{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.flower-left{
+    position: absolute;
+    width: 29%;
+    top: 40px;
+    left: 0px;
+    bottom: 0px;
+
+}
+.flower-right{
+    position: absolute;
+    top: 100px;
+    width: 24%;
+    right: 0px;
+    bottom: 0px;
+
+}
+.p1{
+    position: absolute;
+    letter-spacing: 5px;
+    font-family: Nothing You Could Do;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    top: 55%;
+    width: 100%;
+    user-select: none;
+
+}
+.p2{
+    position: absolute;
+    letter-spacing: 2px;
+    font-family: Nothing You Could Do;
+    font-size: 22px;
+    text-align: center;
+    color: palevioletred;
+    text-transform: uppercase;
+    text-align: center;
+    top: 75%;
+    width: 100%;
+    user-select: none;
+}
+
+
+
+.footer-socials{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 20px;
+    padding-left: 30%;
+    width: 69%;
+    
+}
+.copyright{
+    position: absolute;
+    font-size: 12px;
+    width: 20%;
+    left: 720px;
+    bottom: 0px;
+    font-family: Nothing You Could Do;
+    font-weight: bold;
+}
+
+.footer-socials li{
+    list-style: none;
+}
+.footer-socials li a{
+    text-decoration: none;
+}
+
+.footer-socials:hover{
+    opacity: 1;
+    transition: all ease-in-out 250ms;
+}
+
+.fa-spotify{
+    color: rgb(30, 215, 96);
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-instagram{
+    color: black;
+}
+
+.fa-twitter{
+    color: rgb(29, 161, 242);
+}
+
+.fa-facebook{
+    color: rgb(66, 103, 178);
+
+}
+
+.fa:hover{
+    transition: all ease-in-out 250ms;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px){
+*{
+    height: 100vh;
+}
+
+#bana{
+    position: absolute;
+    font-size: 6.5em;
+    text-align: center;
+    left: 70px;
+}
+.p1{
+    position: absolute;
+    font-size: 18px;
+    top: 340px;
+
+}
+.p2{
+    position: absolute;
+    top: 450px;
+
+}
+.flower-left{
+    display: none;
+    position: absolute;
+    width: 50%;
+    left: -100px;
+}
+.flower-right{
+    display: none;
+}
+.footer-socials{
+    position: absolute;
+    top: 650px;
+    padding-left: 30px;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.footer-socials li a{
+    font-size: 32px;
+}
+.copyright{
+    position: absolute;
+    left: 205px;
+    top: 690px;
+    font-size: 15px;
+}

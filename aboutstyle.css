@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow: hidden;
+  }
+
+body{
+    background: rgb(247,240,213);
+}
+.nav-links{
+    display: flex;
+    position: relative;
+    top: 15px;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(243, 112, 133);
+    font-family: Nothing You Could Do;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.nav-links li a:hover{
+    transition: all ease-in-out 250ms;
+    color: black;
+}
+#bana{
+    position: relative;
+    font-family: Nothing You Could Do;
+    font-size: 5em;
+    left: 490px;
+    top: 90px;
+    letter-spacing: 10px;
+    user-select: none;
+    background: linear-gradient(to right, #fd7982, #4b2428);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flower-right{
+    position: relative;
+    left: 1050px;
+    bottom: 110px;
+    width: 700px;
+}
+.p1{
+    position: relative;
+    letter-spacing: 5px;
+    font-family: Nothing You Could Do;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    bottom: 820px;
+    user-select: none;
+
+}
+.bana-pfp{
+    position: relative;
+    bottom: 1070px;
+    right: 50px;
+
+}
+.copyright{
+    position: relative;
+    left: 720px;
+    bottom: 1185px;
+    font-family: Nothing You Could Do;
+    font-weight: bold;
+    font-size: 12px;
+}
+.contact-me{
+    font-family: Nothing You Could Do;
+}
+
+.footer-socials{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 1185px;
+    padding-left: 30%;
+    width: 69%;
+}
+
+.footer-socials li{
+    list-style: none;
+}
+.footer-socials li a{
+    text-decoration: none;
+}
+
+.fa-spotify{
+    color: rgb(30, 215, 96);
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-instagram{
+    color: black;
+}
+
+.fa-twitter{
+    color: rgb(29, 161, 242);
+}
+
+.fa-facebook{
+    color: rgb(66, 103, 178);
+
+}
+
+.fa:hover{
+    transition: all ease-in-out 250ms;
+    opacity: 0.7;
+}
