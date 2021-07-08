@@ -3,9 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-html, body {
+html, body{
     overflow: hidden;
-  }
+}
+
 
 body{
     background: rgb(247,240,213);
@@ -30,11 +31,11 @@ body{
     color: black;
 }
 #bana{
-    position: relative;
+    position: absolute;
     font-family: Nothing You Could Do;
     font-size: 5em;
-    left: 490px;
-    top: 90px;
+    left: 450px;
+    top: 120px;
     letter-spacing: 10px;
     user-select: none;
     background: linear-gradient(to right, #fd7982, #4b2428);
@@ -42,35 +43,41 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+#about-color{
+    color: black;
+    transition: all ease-in-out 250ms;
+    text-decoration: underline;
+}
+#about-color:hover{
+    color: #fd7982;
+}
 .flower-right{
     position: relative;
-    left: 1050px;
-    bottom: 100px;
+    left: 1030px;
     width: 700px;
 }
 .p1{
-    position: relative;
+    position: absolute;
     letter-spacing: 5px;
     font-family: Nothing You Could Do;
     font-size: 1.5em;
     text-align: center;
     color: black;
-    bottom: 800px;
-    left: 0px;
+    bottom: 200px;
+    left: 370px;
     user-select: none;
 
 }
 .bana-pfp{
-    position: relative;
-    bottom: 1099px;
-    right: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
 
 }
 .copyright{
-    position: relative;
+    position: absolute;
     left: 720px;
-    bottom: 1185px;
+    bottom: 0px;
     font-family: Nothing You Could Do;
     font-weight: bold;
     font-size: 12px;
@@ -81,12 +88,14 @@ body{
 
 .footer-socials{
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: space-around;
     align-items: center;
-    bottom: 1185px;
+    top: 695px;
     padding-left: 30%;
     width: 69%;
+    font-size: 20px;
+    
 }
 
 .footer-socials li{
@@ -94,6 +103,7 @@ body{
 }
 .footer-socials li a{
     text-decoration: none;
+    transition: all ease-in-out 250ms;
 }
 
 .fa-spotify{
@@ -118,6 +128,51 @@ body{
 }
 
 .fa:hover{
-    transition: all ease-in-out 250ms;
     opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        height: 100vh;
+    }
+
+    #bana{
+        position: absolute;
+        font-size: 5em;
+        text-align: center;
+        left: 25px;
+        letter-spacing: 0px;
+
+    }
+    .p1{
+        position: absolute;
+        left: 25px;
+        top: 350px;
+        font-size: 18px;
+        letter-spacing: 0px;
+        
+    }
+    .bana-pfp{
+        display: none;
+        
+    }
+    .copyright{
+        position: absolute;
+        left: 190px;
+        top: 720px;
+        font-size: 15px;
+
+    }
+    .footer-socials{
+    position: absolute;
+    top: 680px;
+    padding-left: 30px;
+    justify-content: space-around;
+    width: 100%;
+
+    }
+    .footer-socials li a{
+        font-size: 28px;
+    }
+    
 }
