@@ -164,6 +164,9 @@ body{
 *{
     height: 100vh;
 }
+html, body{
+    overflow: hidden;
+}
 
 #bana{
     position: absolute;
