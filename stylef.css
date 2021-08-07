@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html, body{
     overflow: hidden;
 }
+
 body{
-    background: #EDC9AF;
+    background: rgb(247,240,213);/*#EDC9AF;*/
 }
 
 .nav-links{
@@ -33,98 +35,148 @@ body{
     color: black;
 }
 #bana{
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
+    top: 150px;
     font-family: Nothing You Could Do;
-    font-size: 10em;
+    font-size: 10vw;
     text-align: center;
-    top: 200px;
-    left: 500px;
-    letter-spacing: 10px;
+
+    /*top: 200px;*/
+    /*left: 500px;*/
+    letter-spacing: 0px;
     user-select: none;
     background: linear-gradient(to right, #fd7982, #4b2428);
     background-clip: text;
+    margin-right: 50px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -o-background-clip: text;
 }
-
-.pictures{
+.parent{
     display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
 }
+
+.child-1{
+    width: 30%;
+}
+
+.child-2{
+    width: 40%;
+    
+}
+
+.child-3{
+    width: 30%;
+
+}
+
 .flower-left{
-    position: absolute;
-    width: 29%;
-    top: 40px;
+    position: relative;
+    width: 100%;
+
+    /*top: 40px;
     left: 0px;
-    bottom: 0px;
+    bottom: 0px;*/
 
 }
+
 .flower-right{
-    position: absolute;
-    top: 100px;
-    width: 24%;
+    position: relative;
+    width: 30vw;
+    height: 100vh;
+    float: right;
+    /*top: 100px;
     right: 0px;
-    bottom: 0px;
+    bottom: 0px;*/
 
 }
+
 .p1{
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
+    top: 200px;
     letter-spacing: 5px;
     font-family: Nothing You Could Do;
-    font-size: 22px;
+    font-size: -1.5vw;
     text-align: center;
     color: black;
     text-transform: uppercase;
-    text-align: center;
-    top: 55%;
-    width: 100%;
+    
+    /*top: 55%;*/
+    /*width: 100%;*/
     user-select: none;
 
 }
+
 .p2{
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
+    top: 250px;
     letter-spacing: 2px;
     font-family: Nothing You Could Do;
-    font-size: 22px;
+    font-size: -2.5vw;
     text-align: center;
     color: palevioletred;
     text-transform: uppercase;
     text-align: center;
-    top: 75%;
-    width: 100%;
+   /* top: 75%;
+    width: 100%;*/
     user-select: none;
 }
 
+.footer{
+    position: relative;
+    bottom: 270px;
+}
+
+.butterfly{
+   position: fixed;
+   right: 450px;
+   top: 150px;
+}
+
+.butterfly-2{
+ 
 
 
+
+}
 .footer-socials{
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: space-around;
     align-items: center;
-    bottom: 20px;
-    font-size: 20px;
+    /*bottom: 20px;*/
+    font-size: 24px;
     padding-left: 30%;
     width: 69%;
     
     
     
 }
+
 .copyright{
-    position: absolute;
+    position: relative;
     font-size: 12px;
-    width: 20%;
-    left: 720px;
-    bottom: 0px;
+    /*left: 720px;
+    bottom: 0px;*/
     font-family: Nothing You Could Do;
     font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
+
 
 .footer-socials li{
     list-style: none;
 }
+
 .footer-socials li a{
     text-decoration: none;
     transition: all ease-in-out 250ms;
@@ -158,47 +210,121 @@ body{
 
 .fa:hover{
     opacity: 0.7;
+    transform: scale(1.2);
+    
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 720px){
+
+    body{
+        height: 100vh;
+        background: url(./henlo-min.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: left -70px top 70px;
+    }
+    html, body{
+        overflow: hidden;
+    }
+
+ 
+    .flower-right{
+        display: none;
+    }
+    
+    .flower-left{
+        width: 100%;
+        display: none;
+    }
+    
+    .child-1{
+        display: none;
+    }
+
+    
+    .child-2{
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+    .child-3{
+        display: none;
+    }
+    #bana{
+        top: 150px;
+        margin-right: 13px;
+        font-size: 70px; 
+        color: black;
+    }
+
+    .footer-socials{
+        position: relative;
+        width: 100%;
+        left: 0px;
+        padding-left: 0px;
+    }
+    .copyright{
+        font-size: 15px;
+    }
+    .p1{
+        margin-bottom: 50px;
+    }
+    .p2{
+        top: 300px;
+        color: black;
+    }
+
+}
+
+@media screen and (max-width: 720px) and (orientation: landscape){
+    #bana{
+        top: 50px;
+    }
+    .p1{
+        top: 70px;
+    }
+    .p2{
+        top: 90px;
+    }
+    .footer{
+        bottom: 230px;
+    }
+}
+
+/*@media screen and (max-width: 500px){
 *{
     height: 100vh;
-}
-html, body{
-    overflow: hidden;
 }
 
 #bana{
     position: absolute;
-    font-size: 6.5em;
+    font-size: 88px;
     text-align: center;
-    left: 35px;
+    left: 15px;
     letter-spacing: 9px;
 }
 .p1{
     position: absolute;
     font-size: 20px;
     top: 380px;
-    color: white;
+    color: red;
     
 }
 .p2{
     position: absolute;
     top: 550px;
     font-size: 18px;
-    color: white;
+    color: red;
 
 }
 .flower-left{
     display: none;
-    position: absolute;
-    width: 400px;
-    left: -250px;
+   
 }
 .flower-right{
     position: absolute;
     width: 400px;
-    right: -50px;
+    right: 0px;
     bottom: 0px;
     top: 300px;
     padding-bottom: 50px;
@@ -223,8 +349,23 @@ html, body{
     font-size: 14px;
 
 }
+}*/
 
+/*@media screen and (orientation: landscape){
+    
+    #bana{
+        top: 80px;
+    }
 
+    .p1{
+        top: 100px;
+    }
+    
+    .p2{
+        top: 150px;
+    }
+    .footer{
+        bottom: 0px;
+    }
+}*/
 
-
-}
